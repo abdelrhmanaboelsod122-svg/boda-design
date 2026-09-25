@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgPoster" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="posterArtGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bgPoster)" />
+
+  <!-- Poster Frame (Vertical Portrait Ratio in Center) -->
+  <g transform="translate(230, 45)">
+    <!-- Realistic Shadow -->
+    <rect x="-10" y="10" width="360" height="500" rx="8" fill="#000" opacity="0.6" filter="blur(20px)" />
+
+    <!-- Poster Sheet -->
+    <rect width="340" height="490" rx="6" fill="#0b0f19" stroke="#334155" stroke-width="2" />
+
+    <!-- Poster Grid & Design Hierarchy -->
+    <g transform="translate(25, 25)">
+      <!-- Top Micro Header -->
+      <text x="0" y="15" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="800" fill="#38bdf8" letter-spacing="3">ACADEMIC &amp; CREATIVE WORKSHOP</text>
+      <text x="290" y="15" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" fill="#64748b" text-anchor="end">2026 EDITION</text>
+      
+      <line x1="0" y1="28" x2="290" y2="28" stroke="#1e293b" stroke-width="1"/>
+
+      <!-- Giant Bold Typography (Art-directed poster) -->
+      <text x="0" y="85" font-family="'Plus Jakarta Sans', sans-serif" font-size="44" font-weight="900" fill="#ffffff" letter-spacing="-1">FUTURE</text>
+      <text x="0" y="130" font-family="'Plus Jakarta Sans', sans-serif" font-size="44" font-weight="900" fill="#38bdf8" letter-spacing="-1">DESIGN</text>
+
+      <!-- Bold Geometric Visual Graphic in Poster -->
+      <g transform="translate(0, 160)">
+        <rect width="290" height="150" rx="6" fill="#020617" stroke="#1e293b" stroke-width="1" />
+        
+        <!-- Abstract wave / 3D wireframe effect -->
+        <circle cx="145" cy="75" r="55" fill="none" stroke="url(#posterArtGrad)" stroke-width="3" />
+        <ellipse cx="145" cy="75" rx="75" ry="30" fill="none" stroke="#60a5fa" stroke-width="1.5" stroke-dasharray="4 2" />
+        <ellipse cx="145" cy="75" rx="30" ry="75" fill="none" stroke="#818cf8" stroke-width="1.5" stroke-dasharray="4 2" />
+        <circle cx="145" cy="75" r="12" fill="#38bdf8" />
+      </g>
+
+      <!-- Key Details & Event Schedule -->
+      <g transform="translate(0, 335)">
+        <rect width="135" height="48" rx="4" fill="#1e293b" fill-opacity="0.4" />
+        <text x="12" y="20" font-family="sans-serif" font-size="9" fill="#94a3b8">SPEAKER / INSTRUCTOR</text>
+        <text x="12" y="38" font-family="sans-serif" font-size="11" font-weight="bold" fill="#f8fafc">Senior Educator</text>
+
+        <rect x="155" y="0" width="135" height="48" rx="4" fill="#1e293b" fill-opacity="0.4" />
+        <text x="167" y="20" font-family="sans-serif" font-size="9" fill="#94a3b8">LOCATION</text>
+        <text x="167" y="38" font-family="sans-serif" font-size="11" font-weight="bold" fill="#f8fafc">Main Hall &amp; Online</text>
+      </g>
+
+      <!-- Bottom Barcode & Branding -->
+      <g transform="translate(0, 405)">
+        <line x1="0" y1="0" x2="290" y2="0" stroke="#1e293b" stroke-width="1"/>
+        <text x="0" y="25" font-family="sans-serif" font-size="9" fill="#64748b">ART DIRECTION BY BODA DESIGN</text>
+        <!-- Barcode look -->
+        <line x1="230" y1="12" x2="230" y2="28" stroke="#94a3b8" stroke-width="2"/>
+        <line x1="236" y1="12" x2="236" y2="28" stroke="#94a3b8" stroke-width="1"/>
+        <line x1="240" y1="12" x2="240" y2="28" stroke="#94a3b8" stroke-width="3"/>
+        <line x1="247" y1="12" x2="247" y2="28" stroke="#94a3b8" stroke-width="1"/>
+        <line x1="252" y1="12" x2="252" y2="28" stroke="#94a3b8" stroke-width="2"/>
+        <line x1="258" y1="12" x2="258" y2="28" stroke="#94a3b8" stroke-width="3"/>
+        <line x1="264" y1="12" x2="264" y2="28" stroke="#94a3b8" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Tag Label -->
+  <rect x="250" y="15" width="300" height="24" rx="12" fill="#0b0f19" stroke="#334155" stroke-width="1" />
+  <text x="400" y="31" font-family="sans-serif" font-size="10" font-weight="bold" fill="#94a3b8" text-anchor="middle" letter-spacing="1">LARGE FORMAT POSTER ARTWORK MOCKUP</text>
+</svg>

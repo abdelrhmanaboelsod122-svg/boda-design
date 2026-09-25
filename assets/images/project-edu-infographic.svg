@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgInfo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040b14" />
+      <stop offset="100%" stop-color="#0a192f" />
+    </linearGradient>
+    <linearGradient id="chartGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bgInfo)" />
+
+  <!-- Educational Infographic Board (Center Layout) -->
+  <g transform="translate(140, 50)">
+    <rect width="520" height="490" rx="14" fill="#0b172a" stroke="#1e3a5f" stroke-width="2" />
+    
+    <!-- Top Header -->
+    <rect x="25" y="25" width="470" height="65" rx="8" fill="#132742" stroke="#2563eb" stroke-width="1" />
+    <text x="45" y="52" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="900" fill="#f8fafc">SECONDARY SCIENCE INFOGRAPHIC SUMMARY</text>
+    <text x="45" y="73" font-family="sans-serif" font-size="11" fill="#38bdf8">Visual Mind Map &amp; Concept Relationship Diagram</text>
+
+    <!-- 3 Step Horizontal Pipeline -->
+    <g transform="translate(25, 110)">
+      <!-- Step 1 -->
+      <rect width="140" height="100" rx="8" fill="#0f213b" stroke="#38bdf8" stroke-width="1.5" />
+      <circle cx="30" cy="30" r="14" fill="#38bdf8" fill-opacity="0.2" />
+      <text x="30" y="34" font-family="sans-serif" font-size="11" font-weight="bold" fill="#38bdf8" text-anchor="middle">01</text>
+      <text x="52" y="34" font-family="sans-serif" font-size="11" font-weight="bold" fill="#f8fafc">Principle</text>
+      <rect x="18" y="55" width="104" height="6" rx="3" fill="#64748b" />
+      <rect x="18" y="70" width="80" height="6" rx="3" fill="#475569" />
+
+      <!-- Arrow -->
+      <polygon points="173,150 188,160 173,170" fill="#38bdf8" transform="translate(0, -110)"/>
+
+      <!-- Step 2 -->
+      <rect x="165" width="140" height="100" rx="8" fill="#0f213b" stroke="#818cf8" stroke-width="1.5" />
+      <circle cx="195" cy="30" r="14" fill="#818cf8" fill-opacity="0.2" />
+      <text x="195" y="34" font-family="sans-serif" font-size="11" font-weight="bold" fill="#818cf8" text-anchor="middle">02</text>
+      <text x="217" y="34" font-family="sans-serif" font-size="11" font-weight="bold" fill="#f8fafc">Reaction</text>
+      <rect x="183" y="55" width="104" height="6" rx="3" fill="#64748b" />
+      <rect x="183" y="70" width="80" height="6" rx="3" fill="#475569" />
+
+      <!-- Arrow -->
+      <polygon points="338,150 353,160 338,170" fill="#818cf8" transform="translate(0, -110)"/>
+
+      <!-- Step 3 -->
+      <rect x="330" width="140" height="100" rx="8" fill="#0f213b" stroke="#34d399" stroke-width="1.5" />
+      <circle cx="360" cy="30" r="14" fill="#34d399" fill-opacity="0.2" />
+      <text x="360" y="34" font-family="sans-serif" font-size="11" font-weight="bold" fill="#34d399" text-anchor="middle">03</text>
+      <text x="382" y="34" font-family="sans-serif" font-size="11" font-weight="bold" fill="#f8fafc">Outcome</text>
+      <rect x="348" y="55" width="104" height="6" rx="3" fill="#64748b" />
+      <rect x="348" y="70" width="80" height="6" rx="3" fill="#475569" />
+    </g>
+
+    <!-- Visual Chart / Data Graph Representation -->
+    <g transform="translate(25, 230)">
+      <rect width="470" height="150" rx="8" fill="#0a1628" stroke="#1e293b" stroke-width="1" />
+      
+      <!-- Axis Lines -->
+      <line x1="45" y1="25" x2="45" y2="120" stroke="#334155" stroke-width="1.5"/>
+      <line x1="45" y1="120" x2="435" y2="120" stroke="#334155" stroke-width="1.5"/>
+
+      <!-- Curving Data Line -->
+      <path d="M 45 110 Q 140 90, 200 40 T 360 80 T 435 25" fill="none" stroke="url(#chartGrad)" stroke-width="3" />
+      
+      <!-- Data Points -->
+      <circle cx="45" cy="110" r="5" fill="#38bdf8" />
+      <circle cx="200" cy="40" r="5" fill="#38bdf8" />
+      <circle cx="360" cy="80" r="5" fill="#34d399" />
+      <circle cx="435" cy="25" r="5" fill="#34d399" />
+
+      <text x="200" y="25" font-family="sans-serif" font-size="10" font-weight="bold" fill="#38bdf8" text-anchor="middle">Peak Rate</text>
+      <text x="435" y="15" font-family="sans-serif" font-size="10" font-weight="bold" fill="#34d399" text-anchor="end">Final Value</text>
+    </g>
+
+    <!-- Bottom Legend -->
+    <g transform="translate(25, 400)">
+      <rect width="470" height="65" rx="6" fill="#132742" fill-opacity="0.4" />
+      <text x="20" y="28" font-family="sans-serif" font-size="11" font-weight="bold" fill="#f8fafc">Key Takeaway for Exam Revision:</text>
+      <text x="20" y="48" font-family="sans-serif" font-size="10" fill="#94a3b8">Information arranged with visual coding to accelerate student memorization and recall.</text>
+    </g>
+  </g>
+
+  <!-- Tag Label -->
+  <rect x="250" y="18" width="300" height="24" rx="12" fill="#0b172a" stroke="#2563eb" stroke-width="1" />
+  <text x="400" y="34" font-family="sans-serif" font-size="10" font-weight="bold" fill="#60a5fa" text-anchor="middle" letter-spacing="1">STUDY INFOGRAPHIC &amp; DIAGRAM MOCKUP</text>
+</svg>

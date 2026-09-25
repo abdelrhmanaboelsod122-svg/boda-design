@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgEdu" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#09090b" />
+    </linearGradient>
+    <linearGradient id="accentCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+    <linearGradient id="paperGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bgEdu)" />
+
+  <!-- Blueprint / Grid Background Lines -->
+  <g stroke="#38bdf8" stroke-opacity="0.08" stroke-width="1">
+    <line x1="100" y1="0" x2="100" y2="600" />
+    <line x1="200" y1="0" x2="200" y2="600" />
+    <line x1="300" y1="0" x2="300" y2="600" />
+    <line x1="400" y1="0" x2="400" y2="600" />
+    <line x1="500" y1="0" x2="500" y2="600" />
+    <line x1="600" y1="0" x2="600" y2="600" />
+    <line x1="700" y1="0" x2="700" y2="600" />
+    <line x1="0" y1="100" x2="800" y2="100" />
+    <line x1="0" y1="200" x2="800" y2="200" />
+    <line x1="0" y1="300" x2="800" y2="300" />
+    <line x1="0" y1="400" x2="800" y2="400" />
+    <line x1="0" y1="500" x2="800" y2="500" />
+  </g>
+
+  <!-- Summary Sheet Mockup (Center Stage) -->
+  <g filter="url(#shadow)" transform="translate(180, 60)">
+    <!-- Sheet Base -->
+    <rect width="440" height="480" rx="12" fill="url(#paperGlow)" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.4" />
+    
+    <!-- Header Banner -->
+    <rect x="24" y="24" width="392" height="70" rx="8" fill="url(#accentCyan)" fill-opacity="0.2" stroke="#38bdf8" stroke-width="1" />
+    <circle cx="56" cy="59" r="18" fill="#38bdf8" fill-opacity="0.3" stroke="#38bdf8" stroke-width="1.5" />
+    <text x="56" y="64" font-family="sans-serif" font-size="14" font-weight="bold" fill="#38bdf8" text-anchor="middle">BD</text>
+    
+    <!-- Title Text Lines -->
+    <text x="90" y="52" font-family="sans-serif" font-size="14" font-weight="bold" fill="#f8fafc">SECONDARY EDUCATION SUMMARY</text>
+    <text x="90" y="72" font-family="sans-serif" font-size="11" fill="#94a3b8">Boda Design • Visual Study Guide Template</text>
+
+    <!-- Content Blocks (Organized study layout) -->
+    <!-- Section 1 -->
+    <rect x="24" y="112" width="186" height="150" rx="6" fill="#1e293b" fill-opacity="0.6" stroke="#475569" stroke-width="1" />
+    <rect x="36" y="126" width="70" height="8" rx="4" fill="#38bdf8" />
+    <rect x="36" y="146" width="160" height="5" rx="2" fill="#64748b" />
+    <rect x="36" y="160" width="140" height="5" rx="2" fill="#475569" />
+    <rect x="36" y="174" width="150" height="5" rx="2" fill="#475569" />
+    <rect x="36" y="200" width="162" height="45" rx="4" fill="#0f172a" stroke="#38bdf8" stroke-opacity="0.3" />
+    <text x="117" y="228" font-family="sans-serif" font-size="10" fill="#38bdf8" text-anchor="middle">Key Formula / Law</text>
+
+    <!-- Section 2 -->
+    <rect x="230" y="112" width="186" height="150" rx="6" fill="#1e293b" fill-opacity="0.6" stroke="#475569" stroke-width="1" />
+    <rect x="242" y="126" width="85" height="8" rx="4" fill="#818cf8" />
+    <circle cx="323" cy="190" r="35" fill="none" stroke="#818cf8" stroke-width="2" stroke-dasharray="4 4" />
+    <circle cx="323" cy="190" r="18" fill="#818cf8" fill-opacity="0.2" />
+    <text x="323" y="194" font-family="sans-serif" font-size="9" fill="#c7d2fe" text-anchor="middle">Diagram</text>
+
+    <!-- Section 3: Summary Key Points -->
+    <rect x="24" y="278" width="392" height="130" rx="6" fill="#1e293b" fill-opacity="0.7" stroke="#475569" stroke-width="1" />
+    <rect x="36" y="294" width="110" height="8" rx="4" fill="#34d399" />
+    
+    <!-- Bullet points -->
+    <circle cx="44" cy="324" r="3" fill="#34d399" />
+    <rect x="56" y="321" width="340" height="6" rx="3" fill="#94a3b8" />
+
+    <circle cx="44" cy="346" r="3" fill="#34d399" />
+    <rect x="56" y="343" width="320" height="6" rx="3" fill="#94a3b8" />
+
+    <circle cx="44" cy="368" r="3" fill="#34d399" />
+    <rect x="56" y="365" width="280" height="6" rx="3" fill="#64748b" />
+
+    <!-- Footer of summary -->
+    <rect x="24" y="424" width="392" height="34" rx="6" fill="#0f172a" />
+    <text x="40" y="445" font-family="sans-serif" font-size="10" fill="#64748b">Secondary School Prep • Clean Visual Hierarchy</text>
+    <text x="390" y="445" font-family="sans-serif" font-size="10" fill="#38bdf8" text-anchor="end">Page 01</text>
+  </g>
+
+  <!-- Placeholder / Concept Badge Overlay -->
+  <rect x="220" y="520" width="360" height="36" rx="18" fill="#09090b" stroke="#38bdf8" stroke-width="1.5" />
+  <text x="400" y="543" font-family="sans-serif" font-size="11" font-weight="bold" fill="#38bdf8" text-anchor="middle" letter-spacing="1">BODA DESIGN • EDUCATIONAL MOCKUP</text>
+</svg>

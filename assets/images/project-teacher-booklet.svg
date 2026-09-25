@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bookletGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="coverAccent" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="100%" stop-color="#312e81" />
+    </linearGradient>
+    <filter id="bookletShadow">
+      <feDropShadow dx="8" dy="18" stdDeviation="22" flood-color="#000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bookletGrad)" />
+
+  <!-- Educational Background Geometry (Formulas & Dotted grid) -->
+  <g fill="#4f46e5" fill-opacity="0.15">
+    <circle cx="100" cy="150" r="8" />
+    <circle cx="200" cy="120" r="5" />
+    <circle cx="700" cy="450" r="10" />
+    <circle cx="650" cy="180" r="6" />
+    <circle cx="150" cy="480" r="7" />
+  </g>
+
+  <!-- The Teacher's Booklet Mockup (Spine + Cover) -->
+  <g filter="url(#bookletShadow)" transform="translate(210, 60)">
+    <!-- Spine binding effect -->
+    <rect x="-12" y="0" width="16" height="480" rx="3" fill="#1e1b4b" stroke="#312e81" stroke-width="1" />
+    <line x1="-4" y1="0" x2="-4" y2="480" stroke="#4f46e5" stroke-opacity="0.4" />
+
+    <!-- Main Front Cover -->
+    <rect width="380" height="480" rx="8" fill="#090d16" stroke="#4f46e5" stroke-width="2" stroke-opacity="0.6" />
+
+    <!-- Upper Colored Wave / Header Block -->
+    <rect x="0" y="0" width="380" height="150" rx="8" fill="url(#coverAccent)" />
+    
+    <!-- Teacher Subject Badge -->
+    <rect x="30" y="25" width="130" height="26" rx="13" fill="#ffffff" fill-opacity="0.2" />
+    <text x="95" y="42" font-family="sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">TEACHER'S EDITION</text>
+    
+    <text x="30" y="90" font-family="'Plus Jakarta Sans', sans-serif" font-size="24" font-weight="900" fill="#ffffff">REVISION BOOKLET</text>
+    <text x="30" y="115" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="500" fill="#c7d2fe">Comprehensive Secondary Examination Notes</text>
+
+    <!-- Teacher Name / Icon Slot -->
+    <g transform="translate(30, 180)">
+      <rect width="320" height="65" rx="8" fill="#1e293b" fill-opacity="0.5" stroke="#334155" stroke-width="1" />
+      <circle cx="35" cy="32" r="18" fill="#4f46e5" />
+      <text x="35" y="37" font-family="sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">🎓</text>
+      <text x="65" y="28" font-family="sans-serif" font-size="13" font-weight="bold" fill="#f8fafc">Custom Teacher Branding</text>
+      <text x="65" y="47" font-family="sans-serif" font-size="11" fill="#94a3b8">Prepared for secondary school revision batches</text>
+    </g>
+
+    <!-- Table of Contents / Highlights preview -->
+    <g transform="translate(30, 265)">
+      <rect x="0" y="0" width="320" height="135" rx="8" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+      
+      <!-- Module 1 -->
+      <circle cx="25" cy="30" r="10" fill="#4f46e5" fill-opacity="0.3" stroke="#4f46e5" stroke-width="1"/>
+      <text x="25" y="34" font-family="sans-serif" font-size="10" font-weight="bold" fill="#a5b4fc" text-anchor="middle">1</text>
+      <text x="46" y="34" font-family="sans-serif" font-size="11" fill="#e2e8f0">Unit Highlights &amp; Exam Tips</text>
+      <text x="300" y="34" font-family="sans-serif" font-size="10" fill="#64748b" text-anchor="end">P. 04</text>
+
+      <!-- Module 2 -->
+      <circle cx="25" cy="68" r="10" fill="#4f46e5" fill-opacity="0.3" stroke="#4f46e5" stroke-width="1"/>
+      <text x="25" y="72" font-family="sans-serif" font-size="10" font-weight="bold" fill="#a5b4fc" text-anchor="middle">2</text>
+      <text x="46" y="72" font-family="sans-serif" font-size="11" fill="#e2e8f0">Solved Question Worksheets</text>
+      <text x="300" y="72" font-family="sans-serif" font-size="10" fill="#64748b" text-anchor="end">P. 18</text>
+
+      <!-- Module 3 -->
+      <circle cx="25" cy="106" r="10" fill="#4f46e5" fill-opacity="0.3" stroke="#4f46e5" stroke-width="1"/>
+      <text x="25" y="110" font-family="sans-serif" font-size="10" font-weight="bold" fill="#a5b4fc" text-anchor="middle">3</text>
+      <text x="46" y="110" font-family="sans-serif" font-size="11" fill="#e2e8f0">Final Mock Test &amp; Answer Key</text>
+      <text x="300" y="110" font-family="sans-serif" font-size="10" fill="#64748b" text-anchor="end">P. 32</text>
+    </g>
+
+    <!-- Bottom Stamp -->
+    <rect x="30" y="420" width="320" height="35" rx="6" fill="#1e1b4b" fill-opacity="0.4" />
+    <text x="190" y="442" font-family="sans-serif" font-size="11" font-weight="bold" fill="#a5b4fc" text-anchor="middle">HIGH-RESOLUTION PRINT-READY PDF</text>
+  </g>
+
+  <!-- Tag Label -->
+  <rect x="250" y="20" width="300" height="26" rx="13" fill="#020617" stroke="#4f46e5" stroke-width="1" />
+  <text x="400" y="37" font-family="sans-serif" font-size="10" font-weight="bold" fill="#a5b4fc" text-anchor="middle" letter-spacing="1">TEACHER'S REVISION BOOKLET MOCKUP</text>
+</svg>
