@@ -7,7 +7,7 @@
   <meta name="description" content="موقع مصمم الجرافيك بودا - تصميم شعارات، بوسترات سوشيال ميديا، إعلانات تجارية، وملازم ومذكرات تعليمية بأعلى جودة." />
   
   <!-- Favicon -->
-  <link rel="icon" type="image/jpeg" href="images/logo-boda.jpg" />
+  <link rel="icon" type="image/jpeg" href="logo-boda.jpg" />
 
   <!-- Google Fonts (Cairo & Tajawal) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -189,14 +189,6 @@
     .nav-cta:hover {
       transform: translateY(-2px);
       box-shadow: 0 6px 20px rgba(16, 185, 129, 0.5);
-    }
-    .mobile-menu-btn {
-      display: none;
-      background: none;
-      border: none;
-      color: var(--gold-primary);
-      font-size: 1.6rem;
-      cursor: pointer;
     }
 
     /* Hero Section */
@@ -995,9 +987,6 @@
       .nav-links {
         display: none;
       }
-      .mobile-menu-btn {
-        display: block;
-      }
       .hero-title {
         font-size: 2.2rem;
       }
@@ -1033,7 +1022,7 @@
   <!-- Navbar -->
   <nav class="navbar">
     <a href="#" class="nav-brand">
-      <img src="images/logo-boda.jpg" alt="Boda Logo" class="nav-logo-img" />
+      <img id="nav-logo" src="logo-boda.jpg" onerror="smartFallback(this, ['logo-boda.jpg', 'images/logo-boda.jpg', 'media_1790892034990.jpg', 'logo.jpg'])" alt="Boda Logo" class="nav-logo-img" />
       <span class="nav-brand-title">BODA DESIGN</span>
     </a>
 
@@ -1096,8 +1085,8 @@
           </div>
         </div>
 
-        <div class="logo-hero-frame" onclick="openLightbox('images/logo-boda.jpg', 'شعار Boda Graphic Design الملكي الفاخر')">
-          <img src="images/logo-boda.jpg" alt="Boda Graphic Design Logo" />
+        <div class="logo-hero-frame" onclick="triggerLightbox(this)">
+          <img id="hero-logo-img" src="logo-boda.jpg" onerror="smartFallback(this, ['logo-boda.jpg', 'images/logo-boda.jpg', 'media_1790892034990.jpg', 'logo.jpg'])" alt="Boda Graphic Design Logo" />
         </div>
 
         <div class="floating-sticker sticker-2">
@@ -1156,8 +1145,8 @@
 
       <!-- 1. قسم الشعارات (Logos) -->
       <div id="logos-section" class="project-card" data-aos="fade-up" data-aos-delay="100">
-        <div class="card-img-holder" onclick="openLightbox('images/logo-boda.jpg', 'قسم الشعارات: شعار Boda Graphic Design الملكي')">
-          <img src="images/logo-boda.jpg" alt="لوجو بودا جرافيك ديزاين" />
+        <div class="card-img-holder" onclick="triggerLightbox(this)">
+          <img src="logo-boda.jpg" onerror="smartFallback(this, ['logo-boda.jpg', 'images/logo-boda.jpg', 'media_1790892034990.jpg', 'logo.jpg'])" alt="لوجو بودا جرافيك ديزاين" />
           <div class="card-overlay">
             <span class="card-category-pill"><i class="fa-solid fa-crown"></i> قسم الشعارات الرسمية</span>
             <h3 class="card-title">لوجو Boda Graphic Design الملكي</h3>
@@ -1165,7 +1154,7 @@
           </div>
         </div>
         <div class="card-footer" style="padding: 16px 20px;">
-          <button class="view-btn" onclick="openLightbox('images/logo-boda.jpg', 'قسم الشعارات: شعار Boda Graphic Design الملكي')">
+          <button class="view-btn" onclick="triggerCardBtn(this)">
             <i class="fa-solid fa-expand"></i> معاينة بالحجم الكامل
           </button>
           <a href="https://wa.me/201154591411?text=أهلاً%20بودا،%20أريد%20طلب%20تصميم%20لوجو%20احترافي" target="_blank" class="order-item-btn">
@@ -1176,8 +1165,8 @@
 
       <!-- 2. قسم تصميمات السوشيال ميديا (Social Media) -->
       <div id="social-section" class="project-card" data-aos="fade-up" data-aos-delay="200">
-        <div class="card-img-holder" onclick="openLightbox('images/social-media.jpg', 'قسم السوشيال ميديا: بوستر تصميمات السوشيال ميديا')">
-          <img src="images/social-media.jpg" alt="تصميمات السوشيال ميديا" />
+        <div class="card-img-holder" onclick="triggerLightbox(this)">
+          <img src="social-media.jpg" onerror="smartFallback(this, ['social-media.jpg', 'images/social-media.jpg', 'media_1790892035289.jpg', 'social.jpg'])" alt="تصميمات السوشيال ميديا" />
           <div class="card-overlay">
             <span class="card-category-pill"><i class="fa-solid fa-hashtag"></i> قسم السوشيال ميديا</span>
             <h3 class="card-title">بوسترات السوشيال ميديا الإبداعية</h3>
@@ -1185,7 +1174,7 @@
           </div>
         </div>
         <div class="card-footer" style="padding: 16px 20px;">
-          <button class="view-btn" onclick="openLightbox('images/social-media.jpg', 'قسم السوشيال ميديا: بوستر تصميمات السوشيال ميديا')">
+          <button class="view-btn" onclick="triggerCardBtn(this)">
             <i class="fa-solid fa-expand"></i> معاينة بالحجم الكامل
           </button>
           <a href="https://wa.me/201154591411?text=أهلاً%20بودا،%20أريد%20طلب%20تصميمات%20سوشيال%20ميديا" target="_blank" class="order-item-btn">
@@ -1196,8 +1185,8 @@
 
       <!-- 3. قسم الإعلانات التجارية (M Horse Ads) -->
       <div id="ads-section" class="project-card" data-aos="fade-up" data-aos-delay="300">
-        <div class="card-img-holder" onclick="openLightbox('images/m-horse.jpg', 'قسم الإعلانات التجارية: إعلان متجر هواتف M Horse')">
-          <img src="images/m-horse.jpg" alt="إعلان M Horse Mobile Store" />
+        <div class="card-img-holder" onclick="triggerLightbox(this)">
+          <img src="m-horse.jpg" onerror="smartFallback(this, ['m-horse.jpg', 'images/m-horse.jpg', 'media_1790892035270.jpg', 'ad.jpg'])" alt="إعلان M Horse Mobile Store" />
           <div class="card-overlay">
             <span class="card-category-pill"><i class="fa-solid fa-bullhorn"></i> قسم الإعلانات التجارية</span>
             <h3 class="card-title">إعلان M Horse للموبايلات</h3>
@@ -1205,7 +1194,7 @@
           </div>
         </div>
         <div class="card-footer" style="padding: 16px 20px;">
-          <button class="view-btn" onclick="openLightbox('images/m-horse.jpg', 'قسم الإعلانات التجارية: إعلان متجر هواتف M Horse')">
+          <button class="view-btn" onclick="triggerCardBtn(this)">
             <i class="fa-solid fa-expand"></i> معاينة بالحجم الكامل
           </button>
           <a href="https://wa.me/201154591411?text=أهلاً%20بودا،%20أريد%20طلب%20تصميم%20إعلان%20تجاري" target="_blank" class="order-item-btn">
@@ -1216,8 +1205,8 @@
 
       <!-- 4. قسم التصميمات التعليمية (English Summary) -->
       <div id="edu-section" class="project-card" data-aos="fade-up" data-aos-delay="400">
-        <div class="card-img-holder" onclick="openLightbox('images/english-grammar.jpg', 'قسم التصميمات التعليمية: ملخص قواعد الإنجليزي')">
-          <img src="images/english-grammar.jpg" alt="تلخيص إنجليزي If Conditionals" />
+        <div class="card-img-holder" onclick="triggerLightbox(this)">
+          <img src="english-grammar.jpg" onerror="smartFallback(this, ['english-grammar.jpg', 'images/english-grammar.jpg', 'media_1790892034987.jpg', 'english.jpg'])" alt="تلخيص إنجليزي If Conditionals" />
           <div class="card-overlay">
             <span class="card-category-pill"><i class="fa-solid fa-graduation-cap"></i> التصميمات التعليمية</span>
             <h3 class="card-title">ملخص قواعد اللغة الإنجليزية</h3>
@@ -1225,7 +1214,7 @@
           </div>
         </div>
         <div class="card-footer" style="padding: 16px 20px;">
-          <button class="view-btn" onclick="openLightbox('images/english-grammar.jpg', 'قسم التصميمات التعليمية: ملخص قواعد الإنجليزي')">
+          <button class="view-btn" onclick="triggerCardBtn(this)">
             <i class="fa-solid fa-expand"></i> معاينة بالحجم الكامل
           </button>
           <a href="https://wa.me/201154591411?text=أهلاً%20بودا،%20أريد%20طلب%20تصميم%20ملخص%20تعليمي" target="_blank" class="order-item-btn">
@@ -1236,8 +1225,8 @@
 
       <!-- 5. قسم مستلزمات المعلمين والمذكرات (Chemistry Summary) -->
       <div id="teachers-section" class="project-card" data-aos="fade-up" data-aos-delay="500">
-        <div class="card-img-holder" onclick="openLightbox('images/chemistry.jpg', 'قسم مستلزمات المعلمين: بوستر تلخيص قوانين الكيمياء')">
-          <img src="images/chemistry.jpg" alt="تلخيص قوانين الكيمياء ثانوية عامة" />
+        <div class="card-img-holder" onclick="triggerLightbox(this)">
+          <img src="chemistry.jpg" onerror="smartFallback(this, ['chemistry.jpg', 'images/chemistry.jpg', 'media_1790892035000.jpg', 'chemistry.jpg'])" alt="تلخيص قوانين الكيمياء ثانوية عامة" />
           <div class="card-overlay">
             <span class="card-category-pill"><i class="fa-solid fa-flask-vial"></i> مستلزمات ومذكرات المعلمين</span>
             <h3 class="card-title">بوستر تلخيص قوانين الكيمياء</h3>
@@ -1245,7 +1234,7 @@
           </div>
         </div>
         <div class="card-footer" style="padding: 16px 20px;">
-          <button class="view-btn" onclick="openLightbox('images/chemistry.jpg', 'قسم مستلزمات المعلمين: بوستر تلخيص قوانين الكيمياء')">
+          <button class="view-btn" onclick="triggerCardBtn(this)">
             <i class="fa-solid fa-expand"></i> معاينة بالحجم الكامل
           </button>
           <a href="https://wa.me/201154591411?text=أهلاً%20بودا،%20أريد%20طلب%20تصميم%20مذكرات%20وبوسترات%20معلمين" target="_blank" class="order-item-btn">
@@ -1257,7 +1246,7 @@
     </div>
   </section>
 
-  <!-- Graphic Design Tools & Expertise Banner -->
+  <!-- Graphic Design Tools Banner -->
   <section class="tools-banner">
     <div class="tools-container" data-aos="zoom-in-up">
       <div class="tools-info">
@@ -1266,22 +1255,10 @@
       </div>
 
       <div class="software-badges">
-        <div class="soft-badge ps">
-          <i class="fa-solid fa-palette"></i>
-          <span>Adobe Photoshop</span>
-        </div>
-        <div class="soft-badge ai">
-          <i class="fa-solid fa-pen-nib"></i>
-          <span>Adobe Illustrator</span>
-        </div>
-        <div class="soft-badge id">
-          <i class="fa-solid fa-book"></i>
-          <span>Adobe InDesign</span>
-        </div>
-        <div class="soft-badge wacom">
-          <i class="fa-solid fa-tablet-screen-button"></i>
-          <span>Wacom Pen Tablet</span>
-        </div>
+        <div class="soft-badge ps"><i class="fa-solid fa-palette"></i> <span>Adobe Photoshop</span></div>
+        <div class="soft-badge ai"><i class="fa-solid fa-pen-nib"></i> <span>Adobe Illustrator</span></div>
+        <div class="soft-badge id"><i class="fa-solid fa-book"></i> <span>Adobe InDesign</span></div>
+        <div class="soft-badge wacom"><i class="fa-solid fa-tablet-screen-button"></i> <span>Wacom Pen Tablet</span></div>
       </div>
     </div>
   </section>
@@ -1289,10 +1266,7 @@
   <!-- Why Choose Boda -->
   <section class="why-section">
     <div class="section-header" data-aos="fade-up">
-      <div class="section-badge">
-        <i class="fa-solid fa-star"></i>
-        <span>لماذا تختارنا؟</span>
-      </div>
+      <div class="section-badge"><i class="fa-solid fa-star"></i> <span>لماذا تختارنا؟</span></div>
       <h2 class="section-title">ما يميز العمل مع Boda Graphic Design</h2>
       <div class="title-ornament">
         <span class="title-line"></span>
@@ -1303,33 +1277,25 @@
 
     <div class="features-grid">
       <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
-        <div class="feature-icon-box">
-          <i class="fa-solid fa-crown"></i>
-        </div>
+        <div class="feature-icon-box"><i class="fa-solid fa-crown"></i></div>
         <h3 class="feature-title">لمسة ملكية فريدة</h3>
         <p class="feature-desc">أفكار مبتكرة وغير مكررة تجعل علامتك التجارية تتألق فوق جميع المنافسين في السوق.</p>
       </div>
 
       <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
-        <div class="feature-icon-box">
-          <i class="fa-solid fa-bolt"></i>
-        </div>
+        <div class="feature-icon-box"><i class="fa-solid fa-bolt"></i></div>
         <h3 class="feature-title">سرعة فائقة في التسليم</h3>
         <p class="feature-desc">نلتزم بالموعد المتفق عليه بدقة بالغة مع تقديم نماذج مبدئية في أسرع وقت.</p>
       </div>
 
       <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
-        <div class="feature-icon-box">
-          <i class="fa-solid fa-arrows-rotate"></i>
-        </div>
+        <div class="feature-icon-box"><i class="fa-solid fa-arrows-rotate"></i></div>
         <h3 class="feature-title">مرونة في التعديلات</h3>
         <p class="feature-desc">نستمع لكل ملاحظاتك ونجري التعديلات برحابة صدر حتى تصل للنتيجة التي ترضيك تماماً.</p>
       </div>
 
       <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
-        <div class="feature-icon-box">
-          <i class="fa-solid fa-tags"></i>
-        </div>
+        <div class="feature-icon-box"><i class="fa-solid fa-tags"></i></div>
         <h3 class="feature-title">أسعار مناسبة وباقات مميزة</h3>
         <p class="feature-desc">عروض وباقات خاصة لرواد الأعمال، أصحاب المتاجر، والمعلمين لتناسب كل الاحتياجات.</p>
       </div>
@@ -1346,12 +1312,10 @@
 
       <div class="contact-buttons-group">
         <a href="https://wa.me/201154591411" target="_blank" class="btn-whatsapp-big">
-          <i class="fa-brands fa-whatsapp"></i>
-          تواصل فوري عبر واتساب
+          <i class="fa-brands fa-whatsapp"></i> تواصل فوري عبر واتساب
         </a>
         <a href="tel:01154591411" class="btn-phone-big">
-          <i class="fa-solid fa-phone"></i>
-          اتصال هاتفي مباشر
+          <i class="fa-solid fa-phone"></i> اتصال هاتفي مباشر
         </a>
       </div>
 
@@ -1365,7 +1329,7 @@
   <!-- Footer -->
   <footer class="footer">
     <a href="#" class="footer-logo">
-      <img src="images/logo-boda.jpg" alt="Boda Logo" />
+      <img src="logo-boda.jpg" onerror="smartFallback(this, ['logo-boda.jpg', 'images/logo-boda.jpg', 'media_1790892034990.jpg', 'logo.jpg'])" alt="Boda Logo" />
       <span>BODA GRAPHIC DESIGN</span>
     </a>
     <p class="footer-text">
@@ -1390,22 +1354,38 @@
     </div>
   </div>
 
-  <!-- Scripts: AOS Animation -->
+  <!-- Scripts: AOS Animation & Smart Image Fallback -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script>
-    // Initialize AOS animations
-    AOS.init({
-      duration: 800,
-      once: true,
-      offset: 60
-    });
+    AOS.init({ duration: 800, once: true, offset: 60 });
 
-    // Lightbox Modal Functions
+    // نظام ذكي للبحث عن الصور تلقائياً بكل الصيغ والمجلدات الممكنة
+    function smartFallback(img, list) {
+      let idx = parseInt(img.getAttribute('data-err-idx') || '0');
+      if (idx < list.length) {
+        img.setAttribute('data-err-idx', idx + 1);
+        img.src = list[idx];
+      }
+    }
+
+    function triggerLightbox(element) {
+      const img = element.querySelector('img') || element;
+      const title = element.querySelector('.card-title');
+      const caption = title ? title.innerText : 'معاينة التصميم';
+      openLightbox(img.src, caption);
+    }
+
+    function triggerCardBtn(btn) {
+      const card = btn.closest('.project-card');
+      const img = card.querySelector('.card-img-holder img');
+      const title = card.querySelector('.card-title');
+      openLightbox(img.src, title.innerText);
+    }
+
     function openLightbox(imgSrc, caption) {
       const modal = document.getElementById('lightboxModal');
       const img = document.getElementById('lightboxImg');
       const cap = document.getElementById('lightboxCaption');
-      
       img.src = imgSrc;
       cap.innerText = caption;
       modal.classList.add('active');
@@ -1418,11 +1398,8 @@
       document.body.style.overflow = 'auto';
     }
 
-    // Close on Escape key
     document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape') {
-        closeLightbox();
-      }
+      if (e.key === 'Escape') closeLightbox();
     });
   </script>
 </body>
